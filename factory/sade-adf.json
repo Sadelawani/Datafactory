@@ -1,0 +1,9 @@
+{
+	"name": "sade-adf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "48b101a6-6f74-41b0-8b02-255bbba73cd2",
+		"tenantId": "b48bef6f-5b00-4aa2-a9e7-0f80c08e8d57"
+	}
+}
