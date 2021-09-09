@@ -2,7 +2,7 @@
 	"name": "ds_dim_date_lookup_dl",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_adls_datalake",
+			"referenceName": "ls_adls_covidreportingdl",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

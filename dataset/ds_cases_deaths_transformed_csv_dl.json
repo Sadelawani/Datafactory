@@ -1,5 +1,5 @@
 {
-	"name": "ds_country_lookup_dl",
+	"name": "ds_cases_deaths_transformed_csv_dl",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_covidreportingdl",
@@ -10,36 +10,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "country_lookup.csv",
-				"fileSystem": "lookup"
+				"folderPath": "ecdc",
+				"fileSystem": "processed"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "country",
-				"type": "String"
-			},
-			{
-				"name": "country_code_2_digit",
-				"type": "String"
-			},
-			{
-				"name": "country_code_3_digit",
-				"type": "String"
-			},
-			{
-				"name": "continent",
-				"type": "String"
-			},
-			{
-				"name": "population",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

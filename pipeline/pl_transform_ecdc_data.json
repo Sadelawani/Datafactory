@@ -1,9 +1,9 @@
 {
-	"name": "pl_process_ecdc_data",
+	"name": "pl_transform_ecdc_data",
 	"properties": {
 		"activities": [
 			{
-				"name": "ExecuteCasesDeaths",
+				"name": "Cases Deaths Data Flow",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,19 +16,19 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "df_transform_cases_deaths",
+						"referenceName": "df_transofrm_cases_death",
 						"type": "DataFlowReference"
 					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
 					},
-					"traceLevel": "Coarse"
+					"traceLevel": "Fine"
 				}
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2021-09-08T10:04:50Z"
+		"lastPublishTime": "2021-09-09T11:57:17Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

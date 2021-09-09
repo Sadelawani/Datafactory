@@ -1,5 +1,5 @@
 {
-	"name": "ds_country_lookup_dl",
+	"name": "ds_ecdc_cases_deaths_raw_csv_dl",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_covidreportingdl",
@@ -10,8 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "country_lookup.csv",
-				"fileSystem": "lookup"
+				"fileName": "cases_deaths.csv",
+				"folderPath": "ecdc",
+				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -24,11 +25,7 @@
 				"type": "String"
 			},
 			{
-				"name": "country_code_2_digit",
-				"type": "String"
-			},
-			{
-				"name": "country_code_3_digit",
+				"name": "country_code",
 				"type": "String"
 			},
 			{
@@ -37,6 +34,30 @@
 			},
 			{
 				"name": "population",
+				"type": "String"
+			},
+			{
+				"name": "indicator",
+				"type": "String"
+			},
+			{
+				"name": "weekly_count",
+				"type": "String"
+			},
+			{
+				"name": "year_week",
+				"type": "String"
+			},
+			{
+				"name": "rate_14_day",
+				"type": "String"
+			},
+			{
+				"name": "cumulative_count",
+				"type": "String"
+			},
+			{
+				"name": "source",
 				"type": "String"
 			}
 		]

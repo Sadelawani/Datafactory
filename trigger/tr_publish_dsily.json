@@ -1,0 +1,24 @@
+{
+	"name": "tr_publish_dsily",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_population_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/populationagecovid/blobs/population_by_age",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/448e1be1-651c-4c51-94e6-b82ec792714e/resourceGroups/sade-rg/providers/Microsoft.Storage/storageAccounts/covidsadeblobstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
